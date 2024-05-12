@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+    <children>
+        <Label layoutX="224.0" layoutY="8.0" prefHeight="52.0" prefWidth="143.0" text="Reports">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label layoutX="41.0" layoutY="72.0" />
+        <Label layoutX="28.0" layoutY="72.0" />
+        <TableView fx:id="AppointmentsTable" layoutX="25.0" layoutY="89.0" prefHeight="150.0" prefWidth="550.0">
+            <columns>
+                <TableColumn fx:id="IDCol" prefWidth="30.0" text="ID" />
+                <TableColumn fx:id="TitleCol" prefWidth="75.0" text="Title" />
+                <TableColumn fx:id="TypeCol" prefWidth="75.0" text="Type" />
+                <TableColumn fx:id="DescriptionCol" prefWidth="75.0" text="Description" />
+                <TableColumn fx:id="StartCol" prefWidth="105.0" text="Start" />
+                <TableColumn fx:id="EndCol" prefWidth="105.0" text="End" />
+                <TableColumn fx:id="CustomerIDCol" prefWidth="85.0" text="Customer ID" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="SelectCustomer" layoutX="300.0" layoutY="251.0" onAction="#OnSelectCustomer" prefWidth="150.0" promptText="Select Customer..." />
+        <ComboBox fx:id="SelectContact" layoutX="25.0" layoutY="54.0" onAction="#OnSelectContact" prefWidth="150.0" promptText="Select a Contact..." />
+        <Button fx:id="BackBtn" layoutX="534.0" layoutY="411.0" mnemonicParsing="false" onAction="#OnBackBtn" text="Back" />
+      <TableView fx:id="MonthTypeTable" layoutX="25.0" layoutY="256.0" prefHeight="180.0" prefWidth="250.0">
+        <columns>
+            <TableColumn fx:id="MonthCol" prefWidth="75.0" text="Month" />
+          <TableColumn fx:id="MonthTypeCol" prefWidth="57.0" text="Type" />
+          <TableColumn fx:id="MonthNumberCol" prefWidth="117.0" text="# of Appointments" />
+        </columns>
+      </TableView>
+      <TableView fx:id="CustomerAppointmentsTable" layoutX="300.0" layoutY="286.0" prefHeight="150.0" prefWidth="225.0">
+        <columns>
+          <TableColumn fx:id="CustomerAppointmentIDCol" prefWidth="53.0" text="ID" />
+          <TableColumn fx:id="CustomerTitleCol" prefWidth="91.0" text="Title" />
+            <TableColumn fx:id="CustomerIDColumn" prefWidth="81.0" text="Customer ID" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
