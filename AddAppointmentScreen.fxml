@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointmentController">
+    <children>
+        <Label layoutX="103.0" layoutY="14.0" text="Add Appointment">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="60.0" text="Appointment ID:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="100.0" text="Title:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="140.0" text="Description:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="180.0" text="Location:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="220.0" text="Contact:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="260.0" text="Type:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="300.0" text="Date:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="340.0" text="Start Time:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="200.0" layoutY="420.0" text="Customer ID:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="420.0" text="User_ID:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="AddDate" layoutX="140.0" layoutY="300.0" onAction="#OnAddDate" prefHeight="25.0" prefWidth="150.0" />
+        <ComboBox fx:id="AddContactCombo" layoutX="140.0" layoutY="220.0" prefWidth="150.0" />
+        <TextField fx:id="AddLocation" layoutX="141.0" layoutY="180.0" />
+        <TextField fx:id="AddDescription" layoutX="141.0" layoutY="140.0" />
+        <TextField fx:id="AddType" layoutX="141.0" layoutY="260.0" />
+        <TextField fx:id="AddTitle" layoutX="140.0" layoutY="100.0" prefHeight="25.0" prefWidth="92.0" />
+        <TextField fx:id="AddCustomerID" layoutX="330.0" layoutY="420.0" prefHeight="25.0" prefWidth="40.0" />
+        <TextField fx:id="AddUserID" layoutX="140.0" layoutY="420.0" prefHeight="25.0" prefWidth="40.0" />
+        <TextField fx:id="AddID" alignment="CENTER" editable="false" layoutX="171.0" layoutY="60.0" prefHeight="25.0" prefWidth="40.0" promptText="X" />
+        <Button fx:id="AddBack" layoutX="15.0" layoutY="461.0" mnemonicParsing="false" onAction="#OnAddBack" prefWidth="50.0" text="Back" />
+        <Button fx:id="AddSave" layoutX="337.0" layoutY="461.0" mnemonicParsing="false" onAction="#OnAddSave" prefWidth="50.0" text="Save" />
+        <Button fx:id="AddClear" layoutX="277.0" layoutY="461.0" mnemonicParsing="false" onAction="#OnAddClear" prefWidth="50.0" text="Clear" />
+        <ComboBox fx:id="StartTime" layoutX="140.0" layoutY="340.0" onAction="#OnStartTime" prefHeight="25.0" prefWidth="100.0" />
+        <Label layoutX="40.0" layoutY="380.0" text="End Time:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="EndTime" layoutX="140.0" layoutY="380.0" prefHeight="25.0" prefWidth="100.0" />
+    </children>
+</AnchorPane>
